@@ -9,6 +9,7 @@ import java.util.Arrays;
 import joinery.*;
 
 import android.content.Context;
+import android.util.Log;
 
 
 public class CSVReader {
@@ -29,14 +30,11 @@ public class CSVReader {
 
 
 
-       // FileInputStream fis = context.openFileInput(file_name);
+        FileInputStream fis = context.openFileInput(file_name);
 
-        InputStream is = context.getAssets().open(file_name);
+      //  InputStream is = context.getAssets().open(file_name);
 
-
-
-
-        InputStreamReader isr = new InputStreamReader(is);
+        InputStreamReader isr = new InputStreamReader(fis);
 
         BufferedReader br = new BufferedReader(isr);
 
@@ -61,8 +59,11 @@ public class CSVReader {
 
                 //splitting to create columns
                 String[] list = row[i].split(",");
+               // Log.d("CSV", list[0]);
+               // Log.d("CSV-1", list[1]);
+               // Log.d("CSV-2", list[2]);
                 //adding columns
-                df.append(Arrays.asList(list[0],list[1]));
+                df.append(Arrays.asList(list[0],list[2]));
 
 
             }

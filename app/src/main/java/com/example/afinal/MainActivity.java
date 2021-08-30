@@ -199,6 +199,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("df1", String.valueOf(df1));
                 //array that contains unique AID
                 DataFrame<Object> array = df1.unique("AID");
+
                 Log.d("array", String.valueOf(array));
                 Log.d("arraylength", String.valueOf(array.length()));
 
@@ -206,7 +207,6 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < array.length();i++ ) {
 
                     Log.d("ARRAY",(String)array.get(i, "AID"));
-
 
                     DataFrame<Object> dfsingle = dataframes((String)array.get(i, "AID"));
                     Log.d("df_single", String.valueOf(dfsingle));
@@ -234,7 +234,9 @@ public class MainActivity extends AppCompatActivity {
                 if (AID.equals(aid)) {
 
                     String[] tm = ((String) df1.get(i,"TimeStamp")).split(" ");
+                  //  Log.d("tm", tm[1]);
                     String[] split =  tm[1].split(":");
+                   // Log.d("split", String.valueOf(split.length));
                     int seconds = ((Integer.parseInt(split[0]))*60*60) + ((Integer.parseInt(split[1]))*(60))+ (Integer.parseInt(split[2]));
 
 
