@@ -1,0 +1,153 @@
+{
+
+  "_id": "CLone",
+  "_rev": "2-b8bf39894c30e62107782e458048feaa",
+  "controllers": {
+    "cid-b8:27:eb:a8:d8:fb-1": {
+      "id": "cid-b8:27:eb:a8:d8:fb-1",
+      "class": "controller",
+      "manufacturer": "fibaro",
+      "model": "zwave",
+      "protocol": "zwave",
+      "slave-addresses": {
+        "aid-b8:27:eb:a8:d8:fb-3": 2,
+        "aid-b8:27:eb:a8:d8:fb-2": 1
+      },
+      "properties": {
+        "nodeid": 7,
+        "channels": [
+          {
+            "epid": 0,
+            "capabilities": [
+              "level",
+              "notification",
+              "power"
+            ]
+          },
+          {
+            "epid": 1,
+            "capabilities": [
+              "power"
+            ]
+          },
+          {
+            "epid": 2,
+            "capabilities": [
+              "power"
+            ]
+          }
+        ]
+      }
+    },
+    "cid-b8:27:eb:a8:d8:fb-90": {
+      "id": "cid-b8:27:eb:a8:d8:fb-90",
+      "class": "controller",
+      "manufacturer": "fibaro",
+      "model": "zwave",
+      "protocol": "zwave",
+      "slave-addresses": {
+        "aid-b8:27:eb:a8:d8:fb-92": 2,
+        "aid-b8:27:eb:a8:d8:fb-91": 1
+      },
+      "properties": {
+        "nodeid": 28,
+        "channels": [
+          {
+            "epid": 0,
+            "capabilities": [
+              "level",
+              "power"
+            ]
+          },
+          {
+            "epid": 1,
+            "capabilities": [
+              "level",
+              "power"
+            ]
+          },
+          {
+            "epid": 2,
+            "capabilities": [
+              "power"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "devicename": "Aurad8fb",
+  "endpoints": {
+    "aid-b8:27:eb:a8:d8:fb-3": {
+      "id": "aid-b8:27:eb:a8:d8:fb-3",
+      "class": "endpoint",
+      "name": "Fan",
+      "floor": 9,
+      "roomname": "Living Room",
+      "manufacturer": "Fibaro",
+      "model": "zwave",
+      "type": "Fan",
+      "owner": "Abc",
+      "permissions": 0,
+      "master": "cid-b8:27:eb:a8:d8:fb-1",
+      "capabilities": [
+        "power"
+      ]
+    },
+    "aid-b8:27:eb:a8:d8:fb-2": {
+      "id": "aid-b8:27:eb:a8:d8:fb-2",
+      "class": "endpoint",
+      "name": "Light",
+      "floor": 9,
+      "roomname": "Living Room",
+      "manufacturer": "Fibaro",
+      "model": "zwave",
+      "type": "Fan",
+      "owner": "Abc",
+      "permissions": 0,
+      "master": "cid-b8:27:eb:a8:d8:fb-1",
+      "capabilities": [
+        "power"
+      ]
+    },
+    "aid-b8:27:eb:a8:d8:fb-92": {
+      "id": "aid-b8:27:eb:a8:d8:fb-92",
+      "class": "endpoint",
+      "name": "Light",
+      "floor": 2,
+      "roomname": "Mandir",
+      "manufacturer": "Fibaro",
+      "model": "zwave",
+      "type": "Light",
+      "owner": "Abc",
+      "permissions": 0,
+      "master": "cid-b8:27:eb:a8:d8:fb-90",
+      "capabilities": [
+        "power"
+      ]
+    },
+    "aid-b8:27:eb:a8:d8:fb-91": {
+      "id": "aid-b8:27:eb:a8:d8:fb-91",
+      "class": "endpoint",
+      "name": "Fan",
+      "floor": 2,
+      "roomname": "Mandir",
+      "manufacturer": "Fibaro",
+      "model": "zwave",
+      "type": "Fan",
+      "owner": "Abc",
+      "permissions": 0,
+      "master": "cid-b8:27:eb:a8:d8:fb-90",
+      "capabilities": [
+        "level",
+        "power",
+        "speed"
+      ]
+    }
+  },
+  "location": "Aurad8fb",
+  "version": "0",
+  "lastId": 92,
+  "controller_id": "b8:27:eb:a8:d8:fb-0",
+  "macid": "b8:27:eb:a8:d8:fb"
+}
